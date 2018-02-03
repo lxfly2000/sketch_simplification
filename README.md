@@ -1,3 +1,7 @@
+### 附加信息（Extra Information）
+关于在 Windows 上配置 PyTorch 的方法，请参考[知乎上的这篇文章](https://zhuanlan.zhihu.com/p/26871672)。  
+For instructions about installing PyTorch on Windows, please refer to [this article](https://zhuanlan.zhihu.com/p/26871672).
+
 # [Sketch Simplification](http://hi.cs.waseda.ac.jp/~esimo/research/sketch/)
 
 ![Example result](/example_fig01_eisaku.png?raw=true "Example result of the provided model.")
