@@ -1,6 +1,6 @@
-rem :You can delete all lines that contains unrecognizable words if your system language is not Chinese.
-
 @echo off
+rem You can delete all lines that contains unrecognizable words if your system language is not Chinese.
+
 rem 如果想要实现拖拽即可执行的操作，需要指定你安装的 Anaconda3 的路径。
 rem If you want to simplify your image by dragging files onto this script, you should specify the path where Anaconda3 is installed.
 set conda_dir=G:\Anaconda3
