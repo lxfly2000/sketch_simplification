@@ -3,18 +3,13 @@ rem You can delete all lines that contains unrecognizable words if your system l
 
 rem 如果想要实现拖拽即可执行的操作，需要指定你安装的 Anaconda3 的路径。
 rem If you want to simplify your image by dragging files onto this script, you should specify the path where Anaconda3 is installed.
-set conda_dir=G:\Anaconda3
+set conda_dir=F:\Miniconda3
 
 if "%~1"=="" (
 	echo 命令行：%0 ^<文件名^>
 	echo Command: %0 ^<file^>
 	echo.
 	echo 程序会将处理后的图片保存至与原图片相同的路径中并命名为“out_”+原文件名。
-	echo 提示：请在 Anaconda3 命令行环境中运行该命令。
-	goto:eof
-)
-(conda -V>nul 2>nul)||(call "%conda_dir%\Scripts\activate.bat" 2>nul)||(
-	echo 你没有在 Anaconda3 环境中运行该命令。
 	goto:eof
 )
 md tmp
