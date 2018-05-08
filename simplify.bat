@@ -1,6 +1,10 @@
 @echo off
 rem You can delete all lines that contains unrecognizable words if your system language is not Chinese.
 
+set py=python
+%py% --version>nul 2>nul||set py=py
+%py% --version>nul 2>nul||echo 没有找到 Python.&goto:eof
+
 if "%~1"=="" (
 	echo 命令行：%0 ^<文件名^>
 	echo Command: %0 ^<file^>
