@@ -1,11 +1,13 @@
 ### 在Windows上的使用（Using on Windows）
 [PyTorch](https://pytorch.org)现已发布支持Windows的0.4.0版本，因此这个脚本也能在Windows上运行了。  
 
-安装所需组件：（以Python 3.6，CPU版为例）
+安装所需组件：（以Python 3.6，CUDA9.1为例）
 ```Batch
-python -m pip install http://download.pytorch.org/whl/cpu/torch-0.4.0-cp36-cp36m-win_amd64.whl
+python -m pip install http://download.pytorch.org/whl/cu91/torch-0.4.0-cp36-cp36m-win_amd64.whl
 python -m pip install torchvision
 ```
+如果提示GPU不受支持，你可以将`simplify.py`中的`use_cuda`改为`false`.
+
 运行命令：`simplify <图片文件>`
 
 # [Sketch Simplification](http://hi.cs.waseda.ac.jp/~esimo/research/sketch/)
