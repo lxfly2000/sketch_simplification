@@ -6,7 +6,7 @@
 python -m pip install http://download.pytorch.org/whl/cu91/torch-0.4.0-cp36-cp36m-win_amd64.whl
 python -m pip install torchvision
 ```
-如果提示GPU不受支持，你可以将`simplify.py`中的`use_cuda`改为`false`.
+如果提示GPU不受支持，你可以将`simplify.py`中的`use_cuda`改为`False`.
 
 运行命令：`simplify <图片文件>`
 
