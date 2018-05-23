@@ -7,8 +7,8 @@ import math
 parser = argparse.ArgumentParser(description="分割图片。")
 parser.add_argument("--img",type=str,help="输入文件名。")
 parser.add_argument("--out_fmt",type=str,default="out_%d_%d.png",help="输出文件名，默认为“out_%%d_%%d.png”。")
-parser.add_argument("--dw",type=int,default=500,help="分割宽度，默认为 500.")
-parser.add_argument("--dh",type=int,default=500,help="分割高度，默认为 500.")
+parser.add_argument("--dw",type=int,help="分割宽度。")
+parser.add_argument("--dh",type=int,help="分割高度。")
 params = parser.parse_args()
 
 im=Image.open(params.img)
