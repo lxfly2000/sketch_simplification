@@ -9,8 +9,6 @@ set py=python
 if "%~1"=="" (
 	echo 命令行：%0 ^<文件名^> [块宽度] [块高度] [模型]
 	echo Command: %0 ^<file^> [tile width] [tile height] [model]
-	echo.
-	echo 程序会将处理后的图片保存至与原图片相同的路径中并命名为“out_”+原文件名。
 	goto:eof
 )
 call:rtime
